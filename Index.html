@@ -8,15 +8,27 @@
 </head>
 
 <body>
+    <div class="container">
+        <div class="header">
+            <header>INGRESAR</header>
+        </div>
+        <div class="input-container">
+            <div class="input-field">
+                <label for="user">Usuario</label>
+                <input type="text" name="username" id="user" required>  
+            </div>
 
+            <div class="input-field">
+                <label for="pass">Contraseña</label>
+                <input type="password" name="password" id="pass" required>  
+            </div>
 
-
-
-
-
-
-
-    
+            <div class="input-field">
+                <input type="submit" class="submit" name="submit" value="Iniciar Sesión">  
+            </div>
+            <span><a href="#" id="resetPassword">Restablecer contraseña</a></span>
+            <span><a href="#" id="register">Registrar</a></span>
+        </div>
  <script src="script.js"></script>   
 </body>
 </html>
