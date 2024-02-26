@@ -29,6 +29,28 @@
             <span><a href="#" id="resetPassword">Restablecer contraseña</a></span>
             <span><a href="#" id="register">Registrar</a></span>
         </div>
+
+         <!-- Formulario de restablecimiento de contraseña -->
+         <div class="reset-password-form" id="resetPasswordForm" style="display: none;">
+            <h3>Restablecer contraseña</h3>
+            <form action="reset_password.php" method="POST">
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <input type="submit" class="submit" name="reset" value="Enviar solicitud">
+            </form>
+        </div>
+
+        <!-- Formulario de registro -->
+        <div class="register-form" id="registerForm" style="display: none;">
+            <h3>Registrar cuenta</h3>
+            <form action="register.php" method="POST">
+                <input type="text" name="name" placeholder="Nombre" required>
+                <input type="text" name="phone" placeholder="Número de teléfono" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <input type="submit" class="submit" name="register" value="Registrar">
+            </form>
+        </div>
+    </div>
  <script src="script.js"></script>   
 </body>
 </html>
